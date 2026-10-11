@@ -113,59 +113,8 @@
   </div>
   <img src="ilustration1.png" alt="konkurs fotograficzny" class="ilu1">
   <br><br>
-  <div class="registration" id="registration">
-    <h2 style="margin-left: 30%;">REGISTRACIJA</h2>
-
-    <div class="row mb-3">
-      <label class="col-sm-2 col-form-label col-form-label-lg">Imię</label>
-      <div class="col-sm-10">
-        <input type="text" class="form-control" id="reg_name" placeholder="Imię">
-      </div>
-    </div>
-
-    <div class="row mb-3">
-      <label class="col-sm-2 col-form-label col-form-label-lg">Nazwisko</label>
-      <div class="col-sm-10">
-        <input type="text" class="form-control" id="reg_surname" placeholder="Nazwisko">
-      </div>
-    </div>
-
-    <div class="row">
-      <label class="col-sm-2 col-form-label col-form-label-lg">E-mail</label>
-      <div class="col-sm-10">
-        <input type="email" class="form-control" id="reg_email" placeholder="E-mail">
-      </div>
-    </div>
-
-    <br>
-    <button id="registerBtn" class="btn btn-primary">Log in</button>
-  </div>
-
-  <script>
-    document.getElementById('registerBtn').addEventListener('click', function () {
-      const name = document.getElementById('reg_name').value.trim();
-      const surname = document.getElementById('reg_surname').value.trim();
-      const email = document.getElementById('reg_email').value.trim();
-
-      if (!name || !surname || !email) {
-        alert('Wypełnij wszystkie pola');
-        return;
-      }
-
-      // стабильный ID участника
-      const participantId = 'p_' + btoa(email.toLowerCase()).replace(/=/g, '');
-
-      localStorage.setItem('participant_id', participantId);
-      localStorage.setItem('participant_name', name + ' ' + surname);
-      localStorage.setItem('participant_email', email);
-
-      alert('Rejestracja zapisana. Możesz głosować.');
-
-    });
-  </script>
-
-  <br><br>
   <div class="textblock">
+    <br>
     <h2>Autorzy</h2>
     <p>Ta strona internetowa została utworzona na potrzeby projektu biznesowego 13 grudnia 2025 r.</p>
     <p>Projekt został stworzony przez:</p>

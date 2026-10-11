@@ -80,30 +80,34 @@ a .img {
     height: 10%;
 }
 
+
 .textblock {
-    margin-left: 150px;
-    width: 700px;
+    margin-left: 10%;
+    width: 60%;
     line-height: 1.5;
     float: left;
     color: whitesmoke;
 }
 
-.ilu1{
-    width: 500px;
-    height: 500px;
+.ilu1 {
+    width: 30%;
     float: right;
-    margin-right: 100px;
+    margin-right: 10%px;
 }
 
-.registration {
-    width: 500px;
-    margin-left: 25%;
+@media (max-width: 600px) {
+    .textblock {
+        display: block;
+        width: 100%;
+    }
+
+    .ilu1 {
+        display: block;
+        width: 100%;
+        margin-left: 10%;
+    }
 }
 
-.registration input {
-    width: 300px;
-    margin: 5px;
-}
 
 /* Страницы учасников */
 
@@ -127,15 +131,6 @@ a .img {
     background-color: rgb(102, 217, 102);
 }
 
-.vote-btn {
-    width: 120px;
-    height: 75px;
-    align-items: center;
-    margin-left: 45%;
-    background-color: chartreuse;
-    font-weight: 600;
-    border-radius: 15px;
-}
 
 /* Для картинок */
 .images-container {
@@ -147,7 +142,7 @@ a .img {
     width: 750px;
 }
 
-.images-container img{
+.images-container img {
     width: 500px;
     height: 300px;
 }
