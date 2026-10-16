@@ -1,5 +1,5 @@
 body {
-    background-color: grey;
+    background-color: rgb(28, 14, 14);
 }
 
 #header {
@@ -27,44 +27,31 @@ body {
     height: 100vh;
 }
 
-@media (min-width: 400px) {
-    .card {
-        width: 40%;
-    }
-
-    a .img {
-        width: 40%;
-    }
-
-}
-
 .card {
-    border: 3px black solid;
-    border-radius: 10px;
-    position: relative;
-    margin: 15px 0;
-    height: 289px;
-    width: 375px;
+    display: inline-block;
+    width: 30%;
+    aspect-ratio: 4 / 3;
+    min-width: 236px;
+    border-radius: 15px;
+    margin: 15px;
+    overflow: hidden;
 }
 
-a .img {
-    opacity: 1;
+.card img {
     display: block;
-    width: 370px;
-    height: 284px;
-    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    border: 4px rgb(227, 93, 22) solid;
+    border-radius: 15px;
     transition: 50ms ease;
-    backface-visibility: hidden;
 }
 
 .overlay3 {
     position: absolute;
-    height: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 257px;
-    opacity: 1;
+    text-align: center;
+    bottom: -17px;
+    width: 100%;
+    opacity: 0;
     border-radius: 5px;
     background-color: rgba(0, 0, 0, 0.627);
     color: #fffcfc00;
@@ -72,136 +59,103 @@ a .img {
     transform: translate(-50% -50%);
 }
 
-
-.card:hover .block2 {
+.card:hover .overlay3 {
     opacity: 1;
-    height: 40px;
-}
-
-.card:hover .overlay3 p {
+    height: 10%;
     color: #ffffff;
 }
-
-
-.card:hover .overlay3 {
-    height: 10%;
-}
-
 
 .textblock {
     margin-left: 10%;
     width: 60%;
     line-height: 1.5;
     float: left;
-    color: whitesmoke;
+    color: rgb(164, 11, 11);
 }
 
 .ilu1 {
     width: 30%;
     float: right;
-    margin-right: 10%px;
 }
 
-@media (max-width: 600px) {
-    .textblock {
-        display: block;
-        width: 100%;
-    }
-
-    .ilu1 {
-        display: block;
-        width: 100%;
-        margin-left: 10%;
-    }
+.ilu1 a {
+    color: chocolate;
 }
-
 
 /* Страницы учасников */
 
 .back-button {
-    background-color: greenyellow;
+    background-color: rgb(188, 117, 47);
     width: 50px;
     padding: 5px;
     margin-left: 10%;
     text-decoration: none;
-    color: gray;
+    color: rgb(255, 196, 0);
     border-radius: 5px;
 }
 
 .descr {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin-left: 10%;
-    margin-top: 400px;
-    width: 65%;
+    width: 80%;
     border: black double 3px;
+    padding: 10px;
     border-radius: 15px;
-    background-color: rgb(102, 217, 102);
+    background-color: rgb(188, 117, 47);
 }
 
 
 /* Для картинок */
-.images-container {
-    border: black solid 3px;
-    border-radius: 15px;
-    position: absolute;
-    top: 10%;
-    margin-left: 10%;
-}
-
 .viewer {
-    display: flex;
+    margin-left: 10%;
+    width: 80%;
+    min-width: 300px;
     gap: 30px;
-    align-items: flex-start;
-    font-family: sans-serif;
-    background-color: darkseagreen;
+    background-color: slategray;
     border-radius: 15px;
+    padding: 10px;
 }
 
 .main-image {
+    top: 0;
     display: inline-block;
-    width: 100%;
+    vertical-align: top;
+    width: 65%;
+    min-width: 300px;
+    height: auto;
     object-fit: cover;
     border: 3px solid #000;
     border-radius: 15px;
 }
 
-.buttons {
-    display: flex;
-    flex-direction: column;
-}
-
-.buttons button {
+.thumbs {
     width: 150px;
-    height: 60px;
-    border-radius: 15px;
-    border: 2px solid black;
-    font-size: 18px;
-    cursor: pointer;
+    display: inline-block;
+    vertical-align: top;
 }
 
 .thumbs img {
-    display: inline-block;
-    width: 120px;
-    height: 70px;
+    min-width: 120px;
+    min-height: 70px;
     border: 2px solid black;
     border-radius: 12px;
     cursor: pointer;
     transition: 0.2s;
-    margin-top: 10px;
-
+    margin: 10px;
 }
-
-@media (max-width: 830px) {
-    .viewer {
-        display: block;
-    }
-
-    .main-image {
-        width: 85%;
-    }
-}
-
 
 .thumbs img:hover {
     transform: scale(1.05);
+}
+
+@media (max-width:600px) {
+    .main-image {
+        display: block;
+        width: 100%;
+    }
+
+    .thumbs {
+        display: block;
+        width: 100%;
+    }
 }
