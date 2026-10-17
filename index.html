@@ -11,42 +11,77 @@
 </head>
 
 <body>
-  <div class="background-img-container">
-    <img src="background-image.jpg" alt="background image" class="background-img">
-  </div>
-  <header id="header">
-    <div class="container-fluid">
-      <h1>Konkurs fotograficzny</h1>
-      <h2>Temat: Halloween</h2>
-    </div>
-  </header>
   <div>
+    <div class="background-img-container">
+      <img src="background-image.jpg" alt="background image" class="background-img">
+    </div>
+    <header id="header">
+      <div class="container-fluid">
+        <h1>Konkurs fotograficzny</h1>
+        <h2>Temat: Halloween</h2>
+      </div>
+    </header>
+  </div>
+  <br>
+  <br>
+  <div>
+    <div class="textblock">
+      <h2>Witamy w naszym konkursie fotograficznym! 📸</h2>
+      <p>Oto jak to działa:</p>
+      <ul>
+        <ol>Rejestracja
+          <p>Aby wziąć udział, musisz się najpierw zarejestrować. Zajmie Ci to tylko kilka sekund, i będziesz mógł
+            głosować.</p>
+        </ol>
+        <ol>Przesyłanie zdjęć
+          <ul>
+            <ol>Aby opublikować swoje zdjęcie na stronie, wyślij wiadomość e-mail na adres <a
+                href="mailto:matviy.dmitriyev@gmail.com">matviy.dmitriyev@gmail.com</a>. Twój adres e-mail musi zawierać
+              Twoje imię, nazwisko oraz opcjonalnie kolor tła strony.</ol>
+            <ol>Każdy uczestnik może przesłać maksymalnie 5 fotografij</ol>
+            <ol>Łączny rozmiar wszystkich przesłanych plików nie może przekraczać 20 MB.</ol>
+            <ol><b>Wysyłając zdjęcia wyrażasz zgodę na ich ewentualne wyświetlanie w mediach społecznościowych szkoły
+                technicznej.</b></ol>
+          </ul>
+          <p>Zdjęcia będą dodawane na stronę każdego dnia o około godziny 20:00.</p>
+        </ol>
+        <ol>
+          <p>Głosowanie</p>
+          <ul>
+            <ol>Możesz zagłosować tylko na jedno zdjęcie.</ol>
+            <ol>Jeśli zagłosujesz na inne zdjęcie, Twój stary głos zostanie automatycznie usunięty i przeniesiony na
+              nowe.
+            </ol>
+            <ol>Zobacz wszystkie zgłoszenia uczestników i zagłosuj wrzucając kartkę z imieniem i nazwiskiem do skrzynki
+              znajdującej się obok sekretariatu (skrzynki będą znajdować się obok sekretariatu od 26 do 30 października)
+            </ol>
+          </ul>
+        </ol>
+      </ul>
+      <p>🎉 Weź udział, prześlij swoje najlepsze prace i zagłosuj na swoje ulubione zdjęcia! Każdy wkład się liczy.</p>
+    </div>
+    <img src="ilustration1.png" alt="konkurs fotograficzny" id="ilu1" onclick="zoomImage(this)" class="">
+  </div>
+  <script>
+    function zoomImage(img) {
+      img.classList.remove('animate');
+      void img.offsetWidth;
+      new Audio("a.mp3").play();
+      img.classList.add('animate');
+
+    }
+  </script>
+  <br><br>
+  <h2 id="gal">Galeria</h2>
+  <div>
+
     <div class="card">
       <a href=".\Images\Image01\Image01.html">
         <img src="Images\Image01\01.png" href="" alt="Obraz 01 - teamplate">
         <p class="overlay3">Twój obraz może być tutaj</p>
       </a>
     </div>
-    <div class="card">
-      <a href="Images\Image01\Image_X_.html">
-        <img src="#" alt="Obraz 01 - teamplate">
-        <p class="overlay3"></p>
-      </a>
-    </div>
-    <div class="card">
-      <a href="Images\Image01\Image_X_.html">
-        <img src="#" alt="Obraz 01 - teamplate">
-        <p class="overlay3"></p>
-      </a>
-    </div>
-
     <!-- <div class="card">
-      <a href="Images\Image01\Image_X_.html">
-        <img src="#" alt="Obraz 01 - teamplate">
-        <p class="overlay3"></p>
-      </a>
-    </div>
-    <div class="card">
       <a href="Images\Image01\Image_X_.html">
         <img src="#" alt="Obraz 01 - teamplate">
         <p class="overlay3"></p>
@@ -60,42 +95,6 @@
     </div> -->
 
   </div>
-  <br>
-  <br>
-
-  <div class="textblock">
-    <p>Witamy w naszym konkursie fotograficznym! 📸</p>
-    <p>Oto jak to działa:</p>
-    <ul>
-      <ol>Rejestracja
-        <p>Aby wziąć udział, musisz się najpierw zarejestrować. Zajmie Ci to tylko kilka sekund, i będziesz mógł
-          głosować.</p>
-      </ol>
-      <ol>Przesyłanie zdjęć
-        <ul>
-          <ol>Aby opublikować swoje zdjęcie na stronie, wyślij wiadomość e-mail na adres <a
-              href="mailto:matviy.dmitriyev@gmail.com">matviy.dmitriyev@gmail.com</a>. Twój adres e-mail musi zawierać
-            Twoje imię, nazwisko oraz opcjonalnie kolor tła strony.</ol>
-          <ol>Każdy uczestnik może przesłać maksymalnie 5 fotografij</ol>
-          <ol>Łączny rozmiar wszystkich przesłanych plików nie może przekraczać 20 MB.</ol>
-        </ul>
-        <p>Zdjęcia będą dodawane na stronę każdego dnia o około godziny 20:00.</p>
-      </ol>
-      <ol>
-        <p>Głosowanie</p>
-        <ul>
-          <ol>Możesz zagłosować tylko na jedno zdjęcie.</ol>
-          <ol>Jeśli zagłosujesz na inne zdjęcie, Twój stary głos zostanie automatycznie usunięty i przeniesiony na nowe.
-          </ol>
-          <ol>Zobacz wszystkie zgłoszenia uczestników i zagłosuj wrzucając kartkę z imieniem i nazwiskiem do skrzynki
-            znajdującej się obok sekretariatu (skrzynki będą znajdować się obok sekretariatu od 26 do 30 października)
-          </ol>
-        </ul>
-      </ol>
-    </ul>
-    <p>🎉 Weź udział, prześlij swoje najlepsze prace i zagłosuj na swoje ulubione zdjęcia! Każdy wkład się liczy.</p>
-  </div>
-  <img src="ilustration1.png" alt="konkurs fotograficzny" class="ilu1">
   <br><br>
   <div class="textblock">
     <br>
